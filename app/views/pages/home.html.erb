@@ -1,0 +1,15 @@
+<h1>Hello There! Welcome to homework 2!</h1>
+<% User.all.each do |user| %>
+  <p> <%= user.username %> </p>
+  <p> <%= user.email %> </p>
+  <p> <%= user.age %> </p>
+<% end %>
+<% Cat.all.each do |cat| %>
+  <p> <%= cat.meow() %> </p>
+  <p> <%= cat.name %> </p>
+<% end %>
+<% Todo.all.each do |todo| %>
+  <p> <%= todo.task %> </p>
+  <p> <%= todo.finished %> </p>
+<% end %>
+<p> <%=  %> </p>
